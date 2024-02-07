@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tgc5izf.css">
+</head>
+
+<body>
+    <!-- header with the button on the left -->
+        <h2 class="header">
+                HOW TO ESCAPE YOUR REALITY: Waste As Much Time As You Want
+        </h2>
+
+        <div id="link-button" class="menu-alt" style="left: 20px; top: 20px; border-radius: 10px; width: 180px; display: flex; padding: 5px; justify-content: center; font-size: 18px;">
+            <a href="mystery-room.html">Enter Mystery Room</a>
+        </div>
+
+        <!-- the yellow bar, tracking how long user is staying on the site -->
+        <p class="timecount" style="display: flex; justify-content: center;">
+            The time you spent on this site:&nbsp;<br>
+            <span id="seconds"></span>
+        </p>
+
+        <!-- container element contains the main grid elements -->
+        <div class="container">
+            <!-- left top box, triggers function 'randomText' on click-->
+            <div class="container-box" onclick="randomText('#the-list')">
+                <div>
+                    What should I do when I'm bored?:
+                    <br>
+                    <div id="the-list" style="color: yellow;">
+                        (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+                    </div>
+                </div>
+            </div>
+
+            <!-- the 3d object (made in spline) -->
+            <iframe src="https://my.spline.design/untitled-187dc85b6bec4d0cabe24b72534726fa/"></iframe>
+
+            <!-- textbox that allows users to type and display that on screen, 
+                triggers function 'scatter' on doubleclick-->
+            <div class="container-box" 
+            style="display: flex; 
+            justify-content: flex-start; 
+            align-items: normal; 
+            padding: 30px;" 
+            ondblclick="scatter('#input')">
+                <div type="text" id="input" class="typing-box" contenteditable="true">This is a sample text. You can edit this text by clicking on it and typing anything you want. You can also double click on this text and see how it goes. I hope you enjoy playing with this text!</div>
+            </div>
+
+            <!-- collapsible menu elements, 'content' provides help on how to interact with the elements on screen-->
+            <div id="right-menu" class="menu" style="right: 350px;">
+                Press the key
+            </div>
+
+            <div class="content" style="right: 350px; transform: translateX(35%);">
+                <p>
+                    Hint: Try pressing the same key on your keyboard.
+                </p>
+            </div>
+
+            <div id="left-menu" class="menu" style="left: 350px;">
+                Click on the box
+            </div>
+
+            <div class="content" style="left: 350px; transform: translateX(-35%);">
+                <p>
+                    Hint: Try clicking both boxes and see what happens.
+                </p>
+            </div>
+
+        </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
