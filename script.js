@@ -50,4 +50,3 @@ for (i = 0; i < menu_content.length; i++) {
     }
   });
 }
-
