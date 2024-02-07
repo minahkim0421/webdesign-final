@@ -24,6 +24,8 @@ a {
     font-weight: 400;
     font-style: italic;
 }
+
+/* header and stopwatch element */
 .cover-size {
     width: 100vw;
     height: 100vh;
@@ -45,6 +47,8 @@ a {
     font-weight: 400;
     font-style: italic;
 }
+
+/* elements in grid */
 .container {
     flex-grow: 1;
     display: grid;
@@ -73,6 +77,27 @@ a {
 .container-box:hover {
     cursor: pointer;
 }
+.container-box .typing-box {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border: none;
+    overflow: scroll;
+
+    font-family: "neue-haas-unica", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+
+}
+.container-box .typing-box:hover {
+    color: yellow;
+}
+.typing-box:focus {
+    outline: none;
+}
+
+/* menu buttons */
 .menu {
     padding: 10px;
     background-color: white;
@@ -116,25 +141,3 @@ a {
     padding-bottom: 0;
     
   }
-.container-box .typing-box {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
-    border: none;
-
-    font-family: "neue-haas-unica", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1em;
-
-}
-.container-box .typing-box:hover {
-    color: yellow;
-}
-.typing-box:focus {
-    outline: none;
-}
-
-#input:active {
-    caret-color: black;
-}
