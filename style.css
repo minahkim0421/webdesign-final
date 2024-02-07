@@ -138,22 +138,3 @@ a {
 #input:active {
     caret-color: black;
 }
-
-@media only screen and (max-width: 400px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-    .header {
-        height: 150px;
-        text-align: center;
-    }
-    .menu {
-         transform: translateY(50px);
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .header {
-        text-align: center;
-    }
-}
