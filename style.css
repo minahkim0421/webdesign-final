@@ -53,6 +53,8 @@ a {
     flex-grow: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    overflow: hidden;
     margin: 0;
     background-color: white;
     gap: 1px;
@@ -62,7 +64,7 @@ a {
     padding: 30px;
 
         text-align: center;
-        overflow: scroll;
+        overflow-y: scroll;
 
         font-family: "neue-haas-unica", sans-serif;
         font-weight: 400;
@@ -140,3 +142,11 @@ a {
     padding-bottom: 0;
     
   }
+
+  /* @media only screen and (max-width: 800px) {
+
+    .container {
+        background-color: red;
+    }
+
+  } */
