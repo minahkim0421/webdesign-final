@@ -143,10 +143,48 @@ a {
     
   }
 
-  /* @media only screen and (max-width: 800px) {
+.text-options {
+    color: yellow;
+}
+
+
+  @media only screen and (max-width: 6000px) {
+
+    .header::after {
+        content: 'ESCAPE YOUR REALITY: Waste As Much Time As You Want';
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .header::after {
+        content: 'WARNING: DO NOT RESIZE THIS BROWSER!!!';
+        color: red;
+    }
+
+  }
+
+  @media only screen and (max-width: 900px) {
 
     .container {
         background-color: red;
+        grid-template-columns: 1fr;
     }
-
-  } */
+    .header::after {
+        content: '......';
+        color: red;
+    }
+    .menu {
+        display: none;
+    }
+    .timecount {
+        background-color: red;
+    }
+    .container-box .typing-box:hover {
+        color: red;
+    }
+    #the-list {
+        color: red;
+    }
+  }
